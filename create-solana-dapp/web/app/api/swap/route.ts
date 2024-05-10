@@ -9,7 +9,7 @@ export async function POST(request: Request) {
   console.log('Request to swap from', userPublicKey)
   
   try {
-    const swapTxResponse = await fetch('https://quote-api.jup.ag/v6/swap', {
+    const swapTxResponse = await fetch('https://public.jupiterapi.com/swap', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

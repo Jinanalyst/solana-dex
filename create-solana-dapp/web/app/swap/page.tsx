@@ -77,7 +77,7 @@ export default function Swap() {
 
     const quote = await (
       await fetch(
-        `https://quote-api.jup.ag/v6/quote?inputMint=${fromAsset.mint}&outputMint=${toAsset.mint}&amount=${currentAmount * Math.pow(10, fromAsset.decimals)}&slippage=0.5`
+        `https://public.jupiterapi.com/quote?inputMint=${fromAsset.mint}&outputMint=${toAsset.mint}&amount=${currentAmount * Math.pow(10, fromAsset.decimals)}&slippage=0.5`
       )
     ).json();
 
@@ -100,7 +100,7 @@ export default function Swap() {
 
     // get serialized transactions for the swap
     const { swapTransaction } = await (
-      await fetch('https://quote-api.jup.ag/v6/swap', {
+      await fetch('https://public.jupiterapi.com/swap', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
