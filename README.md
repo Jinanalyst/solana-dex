@@ -33,3 +33,6 @@ Open `localhost:3000` in your browser. The swap is at `localhost:3000/swap`
 
 ### API Implementation
 The API implementation is at [create-solana-dapp/web/app/swap/page.tsx](https://github.com/AlmostEfficient/jupiter-swap/blob/main/create-solana-dapp/web/app/swap/page.tsx). It's configured to only have 4 assets - USDC, SOL, BONK, WIF. You'll need to add your own token mint addresses, or you can use the [token list API](https://station.jup.ag/docs/token-list/token-list-api) for validated tokens.
+
+### Using custom Swap API endpoints
+You can get Swap API urls from [Jupiter Station](https://station.jup.ag/docs/apis/swap-api), [QuickNode](https://marketplace.quicknode.com/add-on/metis-jupiter-v6-swap-api) or [JupiterAPI.com](https://www.jupiterapi.com/). You can easily update the Swap API for the endpoints at [create-solana-dapp/web/app/swap/page.tsx](https://github.com/AlmostEfficient/jupiter-swap/blob/main/create-solana-dapp/web/app/swap/page.tsx) and [create-solana-dapp/web/app/api/swap/route.ts](https://github.com/AlmostEfficient/jupiter-swap/blob/main/create-solana-dapp/web/app/api/swap/route.ts).
